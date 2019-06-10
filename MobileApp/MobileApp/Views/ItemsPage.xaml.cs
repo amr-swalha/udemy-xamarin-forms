@@ -25,6 +25,12 @@ namespace MobileApp.Views
             InitializeComponent();
 
             BindingContext = viewModel = new ItemsViewModel();
+            Shell.SetSearchHandler(this, new FeedSearchHandler
+            {
+                ShowsResults = true,
+                Placeholder = "Search for items..",
+                IsSearchEnabled = true
+            });
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)

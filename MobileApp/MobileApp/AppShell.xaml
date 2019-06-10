@@ -28,7 +28,7 @@
             <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
-    <!--<Shell.FlyoutHeaderTemplate>
+    <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
             <Grid HeightRequest="250">
                 <Label
@@ -49,17 +49,17 @@
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
-    </FlyoutItem>-->
-    
+    </FlyoutItem>
+
     <!-- Your Pages -->
-    <TabBar>
+    <!--<TabBar>
         <Tab Title="Browse" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab>
         <Tab Title="About" Icon="tab_about.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
-    </TabBar>
+    </TabBar>-->
    
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.
