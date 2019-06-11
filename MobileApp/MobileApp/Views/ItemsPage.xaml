@@ -5,13 +5,31 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="MobileApp.Views.ItemsPage"
+             xmlns:controls="clr-namespace:MobileApp.Controls"
              Title="{Binding Title}"
              x:Name="BrowseItemsPage">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="AddItem_Clicked" />
     </ContentPage.ToolbarItems>
-
+    <Shell.SearchHandler>
+        <controls:FeedSearchHandler Placeholder="Enter search term"
+                                      ShowsResults="true"
+                                      DisplayMemberName="Name">
+            <controls:FeedSearchHandler.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.25*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.75*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="{Binding Text}" FontAttributes="Bold"></Label>
+                        <Label Grid.Column="1" Text="{Binding Description}"></Label>
+                    </Grid>
+                </DataTemplate>
+            </controls:FeedSearchHandler.ItemTemplate>
+        </controls:FeedSearchHandler>
+    </Shell.SearchHandler>
     <StackLayout>
         <ListView x:Name="ItemsListView"
                 ItemsSource="{Binding Items}"

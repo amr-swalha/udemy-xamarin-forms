@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
 using Xamarin.Forms;
 
-namespace MobileApp.Views
+namespace MobileApp.Controls
 {
     public class FeedSearchHandler : SearchHandler
     {
@@ -18,8 +19,10 @@ namespace MobileApp.Views
             else
             {
                 var results = new List<Results>();
-                results.Add(new Results { Text = "Hello", Description = "Desc" });
-                ItemsSource = results;
+                results.Add(new Results { Text = "First Item", Description = "Hello" });
+                results.Add(new Results { Text = "Second Item", Description = "Description" });
+                var data = results.Where(x => x.Text.Trim().ToLower().Contains(newValue.Trim().ToLower())).ToList();
+                ItemsSource = data;
             }
         }
         protected override void OnItemSelected(object item)

@@ -1,15 +1,8 @@
-﻿using System;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-using MobileApp.Models;
-using MobileApp.Views;
+﻿using MobileApp.Models;
 using MobileApp.ViewModels;
+using System;
+using System.ComponentModel;
+using Xamarin.Forms;
 
 namespace MobileApp.Views
 {
@@ -25,12 +18,7 @@ namespace MobileApp.Views
             InitializeComponent();
 
             BindingContext = viewModel = new ItemsViewModel();
-            Shell.SetSearchHandler(this, new FeedSearchHandler
-            {
-                ShowsResults = true,
-                Placeholder = "Search for items..",
-                IsSearchEnabled = true
-            });
+
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
