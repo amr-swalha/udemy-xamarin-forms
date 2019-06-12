@@ -16,6 +16,7 @@ namespace MobileApp
 
             DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
+            
             Debug.WriteLine("My App is Started");
         }
 

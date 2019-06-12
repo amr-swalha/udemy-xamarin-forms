@@ -11,7 +11,7 @@ namespace MobileApp
         public AppShell()
         {
             InitializeComponent();
-           
+            Routing.RegisterRoute("items", typeof(ItemsPage));
         }
     }
 }
