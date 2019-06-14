@@ -55,6 +55,16 @@
             <ShellContent ContentTemplate="{DataTemplate local:StackLayoutPage}" />
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="Flex Layout" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:FlexlayoutPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Absolute Layout" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:AbsoluteLayoutPage}" />
+        </Tab>
+    </FlyoutItem>
 
     <!-- Your Pages -->
     <!--<TabBar>
