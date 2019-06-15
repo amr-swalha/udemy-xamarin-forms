@@ -64,6 +64,11 @@
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate local:AbsoluteLayoutPage}" />
         </Tab>
+    </FlyoutItem> 
+    <FlyoutItem Title="Button Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ButtonPage}" />
+        </Tab>
     </FlyoutItem>
 
     <!-- Your Pages -->
