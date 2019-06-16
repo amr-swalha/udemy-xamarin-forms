@@ -4,14 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MobileApp.Views.ButtonPage"
-             Title="{Binding Title}">
+             x:Class="MobileApp.Views.ControlsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{Binding LblText}"/>
-            <Button Text="Sample Button" Command="{Binding ButtonCommand}"/>
-            <Button Text="Notify Button" Command="{Binding NotifyCommand}"/>
-            <Label Text="{Binding NotifyTxt}"/>
+            <DatePicker x:Name="datepickerCtrl" 
+                        MinimumDate="01/01/2017"
+                        MaximumDate="01/01/2019"
+                        Date="05/05/2018"
+                        DateSelected="DatepickerCtrl_DateSelected"
+                        />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

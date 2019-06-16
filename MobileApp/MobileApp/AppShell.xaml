@@ -70,6 +70,11 @@
             <ShellContent ContentTemplate="{DataTemplate local:ButtonPage}" />
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="Controls Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ControlsPage}" />
+        </Tab>
+    </FlyoutItem>
 
     <!-- Your Pages -->
     <!--<TabBar>
