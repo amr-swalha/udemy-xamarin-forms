@@ -75,6 +75,16 @@
             <ShellContent ContentTemplate="{DataTemplate local:ControlsPage}" />
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="Alerts Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:AlertsPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Images Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ImagesPage}" />
+        </Tab>
+    </FlyoutItem>
 
     <!-- Your Pages -->
     <!--<TabBar>
