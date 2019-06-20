@@ -85,6 +85,16 @@
             <ShellContent ContentTemplate="{DataTemplate local:ImagesPage}" />
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="ListView Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ListViewPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Maps Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MapPage}" />
+        </Tab>
+    </FlyoutItem>
 
     <!-- Your Pages -->
     <!--<TabBar>
