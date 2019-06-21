@@ -64,7 +64,7 @@
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate local:AbsoluteLayoutPage}" />
         </Tab>
-    </FlyoutItem> 
+    </FlyoutItem>
     <FlyoutItem Title="Button Page" Icon="tab_about.png">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate local:ButtonPage}" />
@@ -95,6 +95,11 @@
             <ShellContent ContentTemplate="{DataTemplate local:MapPage}" />
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="Picker Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:PickerPage}" />
+        </Tab>
+    </FlyoutItem>
 
     <!-- Your Pages -->
     <!--<TabBar>
@@ -105,7 +110,7 @@
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
     </TabBar>-->
-   
+
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.
 
