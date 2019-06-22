@@ -6,6 +6,10 @@
              mc:Ignorable="d"
              x:Class="MobileApp.App">
     <Application.Resources>
-        
+        <Color x:Key="lblColor">Yellow</Color>
+        <Style x:Key="lblStyle" TargetType="Label">
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="TextColor" Value="Red" />
+        </Style>
     </Application.Resources>
 </Application>
