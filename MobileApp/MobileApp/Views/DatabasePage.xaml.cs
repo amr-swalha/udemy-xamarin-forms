@@ -1,4 +1,5 @@
-﻿using MobileApp.ViewModels;
+﻿using MobileApp.Models;
+using MobileApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,15 +15,21 @@ namespace MobileApp.Views
     public partial class DatabasePage : ContentPage
     {
         DatabaseViewModel vm;
+
         public DatabasePage()
         {
             InitializeComponent();
-            vm = new DatabaseViewModel();
-            var data = vm._order.GetAll();
-            for (int i = 0; i < 8; i++)
-            {
+            BindingContext = vm = new DatabaseViewModel();
+        }
 
-            }
+        private void SaveBtn_Clicked(object sender, EventArgs e)
+        {
+            vm.AddItem(new Order { Amount = int.Parse(Amount.Text), CustomerName = CustomerName.Text });
+        }
+        protected override void OnDisappearing()
+        {
+            vm = null;
+            base.OnDisappearing();
         }
     }
 }

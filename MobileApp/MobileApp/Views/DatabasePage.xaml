@@ -7,9 +7,21 @@
              x:Class="MobileApp.Views.DatabasePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="CustomerName" Placeholder="Customer Name" />
+            <Entry x:Name="Amount" Placeholder="Amount"/>
+            <Button x:Name="SaveBtn" Text="Save" Clicked="SaveBtn_Clicked"/>
+            <ListView x:Name="OrdersLst" ItemsSource="{Binding Orders}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding CustomerName}" />
+                                <Label Text="{Binding Amount}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
