@@ -115,6 +115,11 @@
             <ShellContent ContentTemplate="{DataTemplate local:EssentialsPage}" />
         </Tab>
     </FlyoutItem>
+ <FlyoutItem Title="Database Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:DatabasePage}" />
+        </Tab>
+    </FlyoutItem>
 
     <!-- Your Pages -->
     <!--<TabBar>
