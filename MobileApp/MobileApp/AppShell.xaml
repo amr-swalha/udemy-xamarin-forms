@@ -115,9 +115,24 @@
             <ShellContent ContentTemplate="{DataTemplate local:EssentialsPage}" />
         </Tab>
     </FlyoutItem>
- <FlyoutItem Title="Database Page" Icon="tab_about.png">
+    <FlyoutItem Title="Database Page" Icon="tab_about.png">
         <Tab>
             <ShellContent ContentTemplate="{DataTemplate local:DatabasePage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="API Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ApiPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Depedency Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:DepedencyExample}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Messaging Center Page" Icon="tab_about.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MessagingCenterExample}" />
         </Tab>
     </FlyoutItem>
 

@@ -8,7 +8,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Button Text="Add dummy item" Clicked="Button_Clicked" />
-            <ListView x:Name="OrdersList" ItemsSource="{Binding orders}">
+            <ListView x:Name="OrdersList" ItemsSource="{Binding .}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
